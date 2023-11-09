@@ -45,7 +45,7 @@ const FeaturesComponent = () => {
                     </Item>
 
                     
-                    <Item  iconName="/fessjo/maquina2.png" title="3. Reparación, Mantenimiento y Programcion">
+                    <Item  iconName="/fessjo/maquina2.png" title="3. Reparación, Mantenimiento y Programación ">
                     En <b>FESSJO</b> , ofrecemos servicios de reparación y mantenimiento de maquinaria.
                     </Item>
                     
