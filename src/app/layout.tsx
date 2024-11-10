@@ -26,9 +26,9 @@ export default function RootLayout({
                 <body className={cn(inter.className)}>
                   
                   <Providers>
-                    <HeaderComponent />
+                        <HeaderComponent />
                         {children}
-                        <FooterComponent />
+                        
                   </Providers>
                     
                 

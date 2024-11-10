@@ -4,15 +4,18 @@ import { Flex } from '@chakra-ui/react'
 import SliderComponent from '../components/home/Slider'
 import FeaturesComponent from '../components/home/Features'
 import PricingComponent from '../components/home/Pricing'
+import HeroSlider from '../components/home/HeroSlider'
+import FooterComponent from '../components/layout/Footer'
 
 export default function Home() {
   return (
-   <div>
+   <div className=''>
       <Flex flexDirection="column" marginX="auto" flex="1" >
           <Hero />
       </Flex>
       
-      <SliderComponent />
+      {/*<SliderComponent />*/}
+      <HeroSlider />
       
       
       <FeaturesComponent />
@@ -21,6 +24,8 @@ export default function Home() {
       <Flex width="100%" marginX="auto" maxWidth="container.lg" px={4} py={10}>
           <PricingComponent />
       </Flex>
+
+      <FooterComponent />
       
    </div>
   )

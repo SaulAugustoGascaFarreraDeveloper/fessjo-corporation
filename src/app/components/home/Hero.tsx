@@ -4,14 +4,24 @@ import Link from "next/link"
 import {HiArrowRight} from "react-icons/hi"
 import Demo from "./Demo"
 import { useEffect, useState } from "react"
-import DemoFessjo from "./DemoFessjo"
+//import DemoFessjo from "./DemoFessjo"
 import { FaWhatsapp } from "react-icons/fa"
+import dynamic from "next/dynamic"
+import { Spinner } from "../spinner"
 
 type Props = {}
+
+
+const DemoFessjo = dynamic(() => import("./DemoFessjo"),{
+    ssr: false,
+    loading: () => <Spinner />
+})
 
 const Hero = (props: Props) => {
 
     const [isMounted,setIsMounted] = useState<boolean>(false)
+
+    
 
     useEffect(()=>{
 
