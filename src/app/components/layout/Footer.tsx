@@ -48,7 +48,7 @@ const FooterComponent = () => {
 
                             <Text><b>email: </b> felipegasca3@yahoo.com.mx </Text>
 
-                            <SocialButton href="https://api.whatsapp.com/send?phone=4427513077">
+                            <SocialButton href="https://api.whatsapp.com/send?phone=18116385859">
                                 <FaWhatsapp  />
                             </SocialButton>
 

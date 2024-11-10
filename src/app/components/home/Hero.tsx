@@ -1,5 +1,5 @@
 "use client"
-import { Box, Button, Flex, SimpleGrid, Text, VStack } from "@chakra-ui/react"
+import { Box, Flex, SimpleGrid, Text, VStack } from "@chakra-ui/react"
 import Link from "next/link"
 import {HiArrowRight} from "react-icons/hi"
 import Demo from "./Demo"
@@ -8,6 +8,9 @@ import { useEffect, useState } from "react"
 import { FaWhatsapp } from "react-icons/fa"
 import dynamic from "next/dynamic"
 import { Spinner } from "../spinner"
+import { useRouter } from "next/navigation"
+import { Button } from "@/components/ui/button"
+
 
 type Props = {}
 
@@ -21,7 +24,7 @@ const Hero = (props: Props) => {
 
     const [isMounted,setIsMounted] = useState<boolean>(false)
 
-    
+    const router = useRouter()
 
     useEffect(()=>{
 
@@ -71,19 +74,25 @@ const Hero = (props: Props) => {
                             
                     
                 </Box>
-                <Link href="https://api.whatsapp.com/send?phone=4427513077" passHref>
+                <div className="flex flex-col gap-4">
+
+                <Link href="https://api.whatsapp.com/send?phone=18116385859" passHref>
                     <Button 
+                    
+                        className="bg-green-600 hover:bg-green-500"
                         
-                        as="a"
-                        href=""
-                        variant="brand"
-                        size="lg"
-                        shadow="xl"
-                        rightIcon={<HiArrowRight />}
                     >
-                        Whats app (442 751 3077) <FaWhatsapp className="ml-2 w-6 h-6" />
+                        Whats app (+52) 1 81 1638 5859 <FaWhatsapp className="ml-2 w-6 h-6" />
                     </Button>
+                    
                 </Link>
+
+                    <Button  onClick={() => router.push("/sales")} className="hover:bg-black/70 bg-blue-500 "  >
+                            Venta Maquinaria
+                    </Button>
+
+                </div>
+                
                
             </VStack>
 

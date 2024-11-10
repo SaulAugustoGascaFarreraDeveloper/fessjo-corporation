@@ -45,7 +45,7 @@ const HeaderComponent = () => {
                 </HStack>*/}
 
                 
-                <Button onClick={() => router.push("/sales")} className="hover:bg-black/70" >
+                <Button  onClick={() => router.push("/sales")} className="hover:bg-black/70 bg-blue-500 " >
                     Venta Maquinaria
                 </Button>
                 
